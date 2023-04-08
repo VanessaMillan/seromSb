@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<!--Logo pequeño-->
+	<meta charset="utf-8">
+	<link rel= "icon" type="image/jpg" href="/IMG/logo 222.png" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+	<!--Estilos letra-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+	
+
+    <title>Inicio de sesión</title>
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="static/CSS/formulario.css" th:href="@{/CSS/formulario.css}">
+
+</head>
+<body>
+               
+    <div class="modal-dialog text-center">
+        <div class="col-sm-8 main-section">
+            <div class="modal-content">
+                <div class="col-12 user-img">
+                    <img src="static/IMG/nyjah.jpg" th:src="@{/IMG/nyjah.jpg}"/>
+                </div>
+                <form class="col-12" th:action="@{/login}" method="post">
+                    <div class="form-group" id="user-group">
+                        <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" name="username"/>
+                    </div>
+                    <div class="form-group" id="contrasena-group">
+                        <input type="password" class="form-control" id="password" placeholder="Contraseña" name="password"/>
+                    </div>
+         			<button type="submit" onclick="validate()" class="btn btn-primary">Ingresar </button>
+         			</form>
+                <div class="col-12 forgot">
+                    <a href="#">Recordar contraseña?</a>
+                </div>
+                <div class="col-12 register">
+                    <a href="#">Crear una cuenta</a>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>

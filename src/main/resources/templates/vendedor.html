@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/jpg" href="/IMG/logo 222.png" />
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!--Estilos letra-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+	<!--Estilos letra-->
+	<link rel="stylesheet" href="social-bar-gh-pages/font.css">
+	<link rel="stylesheet" href="social-bar-gh-pages/main.css">
+
+	<title>Serom Sb</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/administrador.css}">
+
+</head>
+
+<body>
+
+	<!-- Barra de navegación -->
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<a href="#" class="enlace">
+			<img th:src="@{/IMG/logoficial.png}" alt="" class="logoo">
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+					aria-expanded="false"></a>
+			</li>
+			<ul>
+				<li><a th:href="@{/logout}">Cerrar sesión</a></li>
+			</ul>
+	</nav>
+
+	<!-- Barra de navegación -->
+	<br>
+	<br>
+	<br>
+	<!--Productos mas vendidos-->
+	<div class="container">
+		<div class="card">
+			<img th:src="@{/IMG/devoluciones.jpg}">
+			<h2>Devoluciones</h2>
+
+
+
+			<br>
+
+
+
+
+			<a th:href="@{/app/demodajuva/Devolucion/allDevolucion}">
+				<input type="button" class="boton_Ventas" value="Ver"></input>
+			</a>
+		</div>
+
+	<br>
+	<br>
+	
+		
+		<div class="card">
+			<img th:src="@{/IMG/Venta.jpg}">
+			<h2>Ventas</h2>
+
+
+
+			<br>
+
+
+
+
+			<a th:href="@{/app/demodajuva/Venta/allVenta}">
+				<input type="button" class="boton_Ventas" value="Ver"></input>
+			</a>
+		</div>
+		
+		<div class="card">
+			<img th:src="@{/IMG/detalle.jpg}">
+			<h2>Detalles de pedidos</h2>
+
+
+
+			<br>
+
+
+
+
+			<a th:href="@{/app/demodajuva/DetallePedido/allDetallePedido}">
+				<input type="button" class="boton_Ventas" value="Ver"></input>
+			</a>
+		</div>
+		
+		<div class="card">
+			<img th:src="@{/IMG/pedido.jpg}">
+			<h2>Pedidos</h2>
+
+
+
+			<br>
+
+
+
+
+			<a th:href="@{/app/demodajuva/Pedido/allPedido}">
+				<input type="button" class="boton_Ventas" value="Ver"></input>
+			</a>
+		</div>
+		
+		<div class="card">
+			<img th:src="@{/IMG/pago.jpg}">
+			<h2>Pagos</h2>
+
+
+
+			<br>
+
+
+
+
+			<a th:href="@{/app/demodajuva/Pago/allPago}">
+				<input type="button" class="boton_Ventas" value="Ver"></input>
+			</a>
+		</div>
+		
+		<div class="card">
+			<img th:src="@{/IMG/amarilla.jpg}">
+			<h2>Productos</h2>
+
+
+
+			<br>
+
+
+
+
+			<a th:href="@{/app/demodajuva/Producto/allProducto}">
+				<input type="button" class="boton_Ventas" value="Ver"></input>
+			</a>
+		</div>
+	</div>
+	<!--Productos mas vendidos-->
+
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<!--Footer-->
+	<a href="#" class="enlace">
+		<img th:src="@{/IMG/Footer.png}" alt="" class="footer">
+	</a>
+
+</body>
+
+</html>

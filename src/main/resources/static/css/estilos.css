@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital@1&display=swap');
+*{
+		padding: 0;
+		margin: 0;
+		text-decoration: none;
+		list-style: none;
+		box-sizing: border-box;
+		font-family: "Raleway";
+}
+
+#cabezera{
+padding-left: 460%;
+padding-top: 1%;
+}
+
+.add{
+	padding-left: 460%;
+	padding-top: 1%;
+}
+body{
+	background-image: url(../Img/Backgroudn-Page.jpg);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	
+	
+}
+header img{
+	width: 12%;
+	height: 15%;
+	border-radius: 10%;
+	padding-top: 15%;	/*Desplazar hacia abajo*/
+	padding-left: 5%;
+
+}
+
+nav{
+    background: #000;
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logoo{
+    width: 45%;
+	height: 45%;
+	margin-top: -12%;
+	
+}
+
+.footer{
+	width: 236%;
+	margin-left:-725px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;                                                                                        
+}
+
+li a.active, li a:hover{
+    background: rgb(84, 213, 230);
+    
+}
+
+.checkbtn{
+    font-size: 30%;
+    color: #fff;
+    float: right;
+    line-height: 80%;
+    margin-right: 40%;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/*publicidad*/
+.publicidad{
+	width: 100%;
+	height: 100%;
+	padding-top: -1000%;
+}
+
+.title{
+	width: 80%;
+	height: 80%;
+}
+
+#gif{
+	width: 65%;
+	height: 50%;
+}
+/*contenido*/
+
+#Quienes-somos{
+	width: 65%;
+	height: 50%;
+}
+#Misión{
+	width: 65%;
+	height: 50%;
+}
+.Visión{
+	width: 65%;
+	height: 50%;
+}
+/*contenido*/
+
+/*productos principales*/
+.container{
+    width: 100%;
+    max-width: 1200%;
+    height: 430%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    text-decoration: none;
+}
+
+.container .card{
+    width: 330px;
+    height: 350px;
+    border-radius: 20%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    text-decoration: none;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12% 16% rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+
+.container .card h4{
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(84, 213, 230);
+    text-decoration: none;
+}
+/*productos principales*/
+
+/*boton de productos*/
+.boton_Ventas{
+	text-decoration: none;
+	display: inline-block;
+	width: 60%;
+	padding: 10px;
+	border: 3px solid #fff;
+	border-radius: 40px;
+	text-decoration: none;
+	background: rgb(84, 213, 230);
+	color: #000;
+	font-weight: bold;
+	transition: all 0.9s;
+	text-align: center;
+	font-size: 30px;
+	text-decoration: none;
+	
+  }
+  
+  .boton_Ventas:hover{
+   
+	background:#d6a4ff;
+	color:#000;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	text-decoration: none;
+   
+  
+  }
+/*boton de productos*/
+
+/*Social bar*/
+
+/* Fin de social bar*/
