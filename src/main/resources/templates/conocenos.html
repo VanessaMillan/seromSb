@@ -20,7 +20,7 @@
 	
 	
 	<title>Conócenos</title>
-	<link rel="stylesheet" type="text/css" href="/css/estilos.css">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/estilos.css}">
 
 </head>
 <body>
@@ -37,13 +37,13 @@
         </a>
         <ul>
             <li><a th:href="@{/index}">Inicio</a></li>
-            <li><a href="/conocenos">Conócenos</a></li>
+            <li><a th:href="@{/conocenos}">Conócenos</a></li>
             <li><a href="https://www.calameo.com/read/006476477696fcfd3ba37">Tienda</a></li>
             <li><a th:href="@{/login}">Mi cuenta</a></li>
         </ul>
     </nav>
 	<!-- Barra de navegación -->
-	<center> <img align="center" class="publicidad" src="IMG/250954182_476514893850183_2749649392315659075_n.gif">
+	<center> <img align="center" class="publicidad" th:src="@{/img/250954182_476514893850183_2749649392315659075_n.gif}">
 		
 	<!--Social bar-->	
 	<div class="social-bar">
@@ -59,11 +59,11 @@
 	<br>
 	<br>  
 	<!--información-->
-		<center> <img align="center" id="Quienes-somos" src="Img/Quienes-somos.png">
+		<center> <img align="center" id="Quienes-somos" th:src="@{/img/Quienes-somos.png}">
 			<br><br><br><br><br><br>
-		<center> <img align="center" id="Misión" src="Img/Misiónai.png">
+		<center> <img align="center" id="Misión" th:src="@{/img/Misiónai.png}">
 			<br><br><br><br><br><br><br><br>
-		<center> <img align="center" class="Visión" src="Img/Visión.png">
+		<center> <img align="center" class="Visión" th:src="@{/img/Visión.png}">
 			<br><br><br><br><br><br><br><br><br>
 	<!--información-->
 
@@ -75,7 +75,7 @@
 	
 	<!--Footer-->
 	 <a href="#" class="enlace">
-            <img src="/img/Footer.png" alt="" class="footer">
+            <img th:src="@{/img/Footer.png}" alt="" class="footer">
         </a>
 </body>
 
